@@ -7,16 +7,17 @@ function realizarOperacion(num1, num2, operacion) {
         return num1 * num2;
     } else if (operacion === "division") {
         if (num2 === 0){
-             return "Error: no se puede dividir entre cero.";
+             return "No es posible realizar una dividir entre cero.";
         }
         return num1/num2;
     } else {
-        return "Operacion no valida.";
+        return "Operacion no es valida.";
     }
 }
 while (true) {
     let num1 = parseFloat(prompt("Ingrese el primer número:"));
     let num2 = parseFloat(prompt("Ingrese el segundo número:"));
+    
     let operacion = prompt("Ingrese la operacion (suma, resta, multiplicacion, division) o 'salir' para terminar:");
 
     if (operacion.toLowerCase() === "salir") {
